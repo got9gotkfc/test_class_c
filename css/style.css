@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    overflow: hidden;
+}
+.main>*:not(aside,section),
+.aside>*,
+.section>*{
+    border: 1px solid lightgray;
+}
+.main{
+    width: 1024px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+}
+.aside{
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu{
+    flex-basis: calc(100% - 25px);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.menu-header{
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF00FF;
+    text-decoration: underline;
+}
+.menu>a{
+    font-size: 16px;
+    color: #000000;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    background: url("/images/menu1.png") no-repeat;
+}
+.menu>a:hover{
+    background: url("/images/menu2.png") no-repeat;
+}
+.update{
+    flex-basis: 25px;
+}
+.section{
+    flex-basis: calc(1000px - 215px);
+    display: flex;
+    flex-direction: column;
+}
+.marquee{
+    flex-basis: 29px;
+    font-size: 24px;
+    color: #0000FF;
+}
+.content{
+    flex-basis: calc(100% - 29px);
+}
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    font-size: 16px;
+}
