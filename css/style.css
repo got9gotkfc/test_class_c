@@ -12,9 +12,9 @@
     width: 1024px;
     margin: 10px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
 }
 .top{
     flex-basis: 1000px;
@@ -25,37 +25,32 @@
     height: calc(768px - 65px - 20px);
     display: flex;
     flex-direction: column;
-    
 }
 .menu{
     flex-basis: calc(100% - 25px);
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-.menu-header{
+}    
+.header{
     font-weight: 500;
     font-size: 24px;
-    color: #FF00FF;
     text-decoration: underline;
+    color: #FF00FF;
 }
 .menu>a{
-    font-size: 16px;
-    color: #000000;
-    margin: 5px;
-    padding: 5px;
-    font-weight: 500;
-    text-decoration: none;
+    display: block;
+    margin: 5px auto;
+    padding-top: 5px;
     width: 200px;
     height: 35px;
     background: url("/images/menu1.png") no-repeat;
+    text-decoration: none;
+    font-size: 16px;
 }
 .menu>a:hover{
     background: url("/images/menu2.png") no-repeat;
 }
 .update{
     flex-basis: 25px;
+    font-size: 16px;
 }
 .section{
     flex-basis: calc(1000px - 215px);
@@ -65,7 +60,7 @@
 .marquee{
     flex-basis: 29px;
     font-size: 24px;
-    color: #0000FF;
+    color: #00f;
 }
 .content{
     flex-basis: calc(100% - 29px);
@@ -73,5 +68,4 @@
 .footer{
     flex-basis: 1000px;
     height: 20px;
-    font-size: 16px;
 }
